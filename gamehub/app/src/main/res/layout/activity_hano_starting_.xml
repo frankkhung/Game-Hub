@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/hanoimageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        app:srcCompat="@drawable/tower_of_hanoi_logo" />
+
+    <TextView
+        android:id="@+id/hanoGameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="A Puzzle Game where you have to\nstack the disks into a tower."
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="33dp" />
+
+    <TextView
+        android:id="@+id/hanotextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose number of disks:"
+        android:gravity="center"
+        android:textSize="15dp"/>
+
+    <RadioGroup
+        android:id="@+id/hanorg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/hanoradioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="3 disks"
+            android:textSize="15dp" />
+
+        <RadioButton
+            android:id="@+id/hanoradioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="4 disks"
+            android:textSize="15dp" />
+
+        <RadioButton
+            android:id="@+id/hanoradioButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="5 disks"
+            android:textSize="15dp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/hanoStartButton"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="New Game" />
+    <!--android:layout_below="@+id/GameText"
+        android:layout_centerHorizontal="true"-->
+
+
+    <Button
+        android:id="@+id/hanoLoadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Load Saved Game" />
+
+
+    <Button
+        android:id="@+id/hanoLoadAutoSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Load Autosave file" />
+
+    <Button
+        android:id="@+id/hanoScoreButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Scoreboard" />
+
+    <Button
+        android:id="@+id/hanoReturnToLaunch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Return to Game Launch Centre" />
+    <!--android:layout_below="@+id/GameText"-->
+    <!--android:layout_toEndOf="@+id/ScoreButton"-->
+
+
+</LinearLayout>
